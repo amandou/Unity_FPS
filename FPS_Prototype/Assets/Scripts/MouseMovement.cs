@@ -8,9 +8,7 @@ public class MouseMovement : MonoBehaviour
     private float mouseSensitivity = 200f;
     private float mouseRotationX = 0f;
 
-    [SerializeField]
     private float mousePositionX;
-    [SerializeField]
     private float mousePositionY;
     
     public Transform player;

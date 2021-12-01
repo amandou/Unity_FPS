@@ -2,12 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SelectionManager : MonoBehaviour
 {
+    private PickObject pickObject;
     public Material highlightMaterial;
     public Material defaultMaterial;
 
     private Transform selection;
+
+    private void Start()
+    {
+        pickObject = GameObject.FindGameObjectWithTag("Object").GetComponent<PickObject>();
+    }
 
     void Update()
     {
@@ -33,6 +40,8 @@ public class SelectionManager : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         objectHit.gameObject.SetActive(false);
+                        pickObject.AddObject();
+
                     }
                 }
                 selection = objectHit;
