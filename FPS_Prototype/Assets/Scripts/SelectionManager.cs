@@ -14,8 +14,8 @@ public class SelectionManager : MonoBehaviour
 
         if (selection != null)
         {
-            var selectionRenderer = selection.GetComponent<Renderer>();
-            selectionRenderer.material = defaultMaterial;
+            var objectRenderer = selection.GetComponent<Renderer>();
+            objectRenderer.material = defaultMaterial;
             selection = null;
         }
 
@@ -26,10 +26,10 @@ public class SelectionManager : MonoBehaviour
             Transform objectHit = hit.transform;
             if (objectHit.CompareTag("Object"))
             {
-                var selectionRenderer = objectHit.GetComponent<Renderer>();
-                if (selectionRenderer != null)
+                var objectRenderer = objectHit.GetComponent<Renderer>();
+                if (objectRenderer != null)
                 {
-                    selectionRenderer.material = highlightMaterial;
+                    objectRenderer.material = highlightMaterial;
                     if (Input.GetMouseButtonDown(0))
                     {
                         objectHit.gameObject.SetActive(false);

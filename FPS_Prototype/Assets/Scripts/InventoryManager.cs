@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+    public List<GameObject> slots;
+    public List<bool> isEmpty;
 
-    void Start()
-    {
-        
-    }
 
-    void Update()
-    {
-        
-    }
+    
 }
