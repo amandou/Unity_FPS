@@ -22948,7 +22948,7 @@ GameObject:
   - component: {fileID: 746143660}
   m_Layer: 0
   m_Name: Cilinder
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25056,7 +25056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f9e7289d658dc478ea9b491896efa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 1617381718305635949, guid: 28177ebf9236e374faf8e9ed6fa52388, type: 3}
+  itemButton: {fileID: 1617381718305635949, guid: c74ab5cee8b1df44ba591ae335a5afde, type: 3}
 --- !u!1 &822192014
 GameObject:
   m_ObjectHideFlags: 0
@@ -42687,7 +42687,7 @@ GameObject:
   - component: {fileID: 1265365244}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
